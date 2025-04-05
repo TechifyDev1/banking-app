@@ -1,28 +1,15 @@
-import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args) {
        
 
-        Scanner scanner = new Scanner(System.in);
+        Car car = new Car("Charger", "Yellow", 10000);
 
-        Animal animal;
+        car.setColor("Blue");
+        car.setPrice(20000);
 
-        System.out.print("Would you like a dog or a cat? (1 = dog, 2 = cat): ");
-
-        int choice = scanner.nextInt();
-
-        if(choice == 1) {
-            animal = new Dog();
-            animal.speak();
-        } else if(choice == 2) {
-            animal = new Cat();
-            animal.speak();
-        } else {
-            System.out.println("Invalid choice.");
-        }
-
-        scanner.close();
-
+        System.out.println("Car model: " + car.getModel());
+        System.out.println("Car color: " + car.getColor());
+        System.out.println("Car price: " + car.getPrice());
     }
 }

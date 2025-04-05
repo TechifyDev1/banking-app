@@ -1,11 +1,11 @@
 public class Main{
     public static void main(String[] args) {
-       Dog dog = new Dog();
-       Cat cat = new Cat();
+       Rabbit rabbit = new Rabbit();
+       Hawk hawk = new Hawk();
        Fish fish = new Fish();
-
-       dog.move();
-       cat.move();
-       fish.move();
+       fish.hunt();
+       fish.flee();
+       hawk.hunt();
+       rabbit.flee();
     }
 }

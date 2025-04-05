@@ -1,8 +1,11 @@
 public class Main{
     public static void main(String[] args) {
-       Student student = new Student(6.6,"Abdulqudus", "Opeyemi");
+       Dog dog = new Dog();
+       Cat cat = new Cat();
+       Fish fish = new Fish();
 
-       student.showName();
-       student.showFullInfo();
+       dog.move();
+       cat.move();
+       fish.move();
     }
 }
